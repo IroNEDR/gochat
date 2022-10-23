@@ -1,0 +1,30 @@
+{{template "base" .}}
+{{define "hero"}}
+<div id="hero" class="jumbotron-fluid">
+  <div class="d-flex mx-3 justify-content-center w-100 h-75">
+    <div class="hero-content align-self-center">
+      <h1>GoChat with your Friends!</h1>
+      <p>Sample Chat Application</p>
+      <a class="btn btn-secondary text-black" href="#about">> More</a>
+    </div>
+  </div>
+</div>
+{{ end }}
+
+{{define "content"}}
+<section id="about">
+  <div class="container mt-5">
+    <h2>Sample Title</h2>
+    <p>This is a sample chat application using websockets</p>
+  </div>
+</section>
+<section id="joinchat">
+  <div class="container mt-5">
+    <h2>Join or Create a Chat Room</h2>
+    <p>Select a chatroom from the list or create a new one</p>
+    <ul>
+      <li>Chat Room 1<a class="btn btn-primary" href="/join/1">Join</a></li>
+    </ul>
+  </div>
+</section>
+{{ end }}
